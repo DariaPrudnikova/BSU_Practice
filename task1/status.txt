@@ -1,0 +1,7 @@
+.idea/
+	src/
+	task1/
+	untitled104.iml
+
+src/
+	task1/
