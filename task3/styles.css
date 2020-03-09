@@ -1,8 +1,4 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-body {
+html, body {
     padding: 0;
     margin: 0;
 }
@@ -20,23 +16,23 @@ body {
     background: #ffffff;
 
 }
-.header_logo a {
+.header-logo a {
     vertical-align: top;
 }
-.header_search {
+.header-search {
     padding-left: 10px;
     padding-right: 10px;
     border: 2px solid rgb(184, 184, 184);
     border-radius: 20px;
 }
-.header_search_img {
+.header-search-img {
     height: 20px;
 }
-.header_search_input {
+.header-search-input {
     height: 20px;
     border: none;
 }
-.header_username {
+.header-username {
     color: rgb(165, 165, 165);
     display: inline-block;
     font-size: larger;
@@ -49,6 +45,10 @@ body {
     vertical-align: middle;
     max-height: 40px;
 }
+.log-out{
+    background: white;
+    border: white;
+}
 .new-post {
     display: flex;
     justify-content: space-between;
@@ -58,39 +58,50 @@ body {
     border-radius: 10px;
     padding: 10px;
 }
-.new-post_avatar {
+.new-post-avatar {
     width: 80px;
     height: 80px;
 }
-.new-post_description {
+.new-post-description {
     border: none;
     padding: 0 8px;
     width: calc(100% - 300px);
     font-size: large;
 }
-.new-post_add-image {
-    width: 40px;
+.new-post-add-image {
+    vertical-align: top;
+    width: 0px;
     align-self: flex-end;
+    background: none;
+    boarder: none;
+    border-radius: 20px;
 }
-.new-post_create-post-button {
-    width: 100px;
+.new-post-create-post-button {
+    width: 35%;
+    height: 10%;
     align-self: flex-end;
+    border-radius: 20px;
+    background: #3dd3f3;
+    color: aliceblue;
+    font-size: medium;
+    font-style: normal;
+    font-family: Helvetica;
+    font-weight: bold;
 }
-.main_filter {
-
-
+.main-filter {
     margin: 5px 0 0 5px;
-
     width: 15%;
     display: inline-block;
-    background-color: #fdfdff;
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 10px;
 }
-.main_publications-wrapper {
+.main-publications-wrapper {
     margin: 5px 5px 0 0;
+    padding-left: -10px;
     display: inline-block;
     width: 82.5%;
 }
-.main_publications {
+.main-publications {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -110,7 +121,7 @@ body {
     width: 80px;
     height: 80px;
 }
-.post_username{
+.post-username{
     color: rgb(165, 165, 165);
     display: inline-block;
     font-size: medium;
@@ -119,16 +130,16 @@ body {
     vertical-align: middle;
     padding-right: 10px;
 }
-.post_content{
+.post-content{
     border: none;
     padding: 0 8px;
     width: calc(100% - 300px);
 }
-.post_like-image {
+.post-like-image {
     width: 32px;
     align-self: flex-end;
 }
-.post_edit-image {
+.post-edit-image {
     width: 30px;
     align-self: flex-end;
 }
@@ -136,21 +147,10 @@ body {
     width: 25px;
     align-self: flex-end;
 }
-/*.show-more-posts {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px auto;
-    width: 60%;
-    border-radius: 20px;
-    padding: 5px;
-    background: #3dd3f3;
-    color: aliceblue;
-    font-size: small;
-    font-family: "Andale Mono";
-    font-style: normal;
-    text-align: justify-all;
+.date-time{
+    align-self: flex-start;
+}
 
-}*/
 .show-more-posts {
     margin: 10px 23%;
     width: 68%;
@@ -176,10 +176,7 @@ body {
     font-family: Helvetica;
     font-size: small;
 }
-/*.footer_portal-name {
-    font-size: small;
-    font-family: "Andale Mono";
-    font-style: normal;
-    text-align: center;
+@media only screen and (max-width: 1000px) {
+    
+}
 
-}*/
