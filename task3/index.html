@@ -1,134 +1,126 @@
 <!doctype html>
-
+<html lang="en">
 <head>
     <title>Gossip</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header class="header">
-        <div class="header_logo">
-            <a><img src="./images/logo.png" alt="Logo"></a>
+        <div class="header-logo">
+            <a href="#top"><img src="./images/logo.png" alt="Logo"></a>
         </div>
-        <div class="header_search">
-            <img class="header_search_img" src="images/search.png">
-            <input class="header_search_input" type="search" placeholder="Search...">
+        <div class="header-search">
+            <img class="header-search-img" src="images/search.png"/>
+            <input class="header-search-input" type="search" placeholder="Search..."/>
         </div>
-        <div class="header_user">
-            <p class="header_username">@Daria</p>
-            <a><img src="./images/log_out.png" alt="Log out"></a>
+        <div class="header-user">
+            <p class="header-username">@Daria</p>
+            <button class="log-out"><img src="./images/log_out.png"  alt="Log out"></button>
         </div>
     </header>
     <main class="main">
         <div class="new-post">
-            <img class="new-post_avatar" src="images/user_avatar.png">
-            <input class="new-post_description" type="text" placeholder="What's happening?">
-            <img class="new-post_add-image" src="images/add_image.png">
-            <img class="new-post_create-post-button" src="images/create_post.png">
+            <form>
+                <!--<button class="ico-btn like-btn"><img src="path/to/like.jpg" alt="Like"/></button>-->
+                <img class="new-post-avatar" src="images/user_avatar.png"/>
+                <input class="new-post-description" type="text" placeholder="What's happening?" required/>
+                <button class="new-post-add-image"><img src="images/add_image.png" alt="Add"/></button>
+                <input class="new-post-create-post-button" type="button" value="New post"/>
+            </form>
         </div>
-        <div class="main_filter">
+        <div class="main-filter">
             <p class="filter" type="text">Filter by...</p>
-            <input class="filter_search_name" type="search" placeholder="@name">
-            <input class="header_search_date" type="search" placeholder="dd.mm.yy">
-            <input class="header_search_hashtag" type="search" placeholder="#hashtag">
-            <!-- Тут будет Filter by... -->
+            <input class="filter-search-name" type="text" placeholder="@name"/>
+            <input class="header-search-date" type="date" placeholder="dd.mm.yy"/>
+            <input class="header-search-hashtag" type="text" placeholder="#hashtag"/>
         </div>
-        <div class="main_publications-wrapper">
-            <div class="main_publications">
+        <div class="main-publications-wrapper">
+            <div class="main-publications">
                 <article class="post">
-                    <img class="post_avatar" src="images/user_avatar.png">
-                    <p class="post_username">@Daria</p>
-                    <p class="post_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <img class="post-avatar" src="images/user_avatar.png"/>
+                    <p class="post-username">@Daria</p>
+                    <p class="post-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <img class="post_edit-image" src="images/edit.png">
-                    <img class="post_delete-image" src="images/delete.png">
-                    <!-- Это пост -->
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    #dasha</p>
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
+                    <button class="post-edit-image"><img src="images/edit.png" alt="Edit"/></button>
+                    <button class="post-delete-image"><img src="images/delete.png" alt="Delete"/></button>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/valentino.png">
-                    <p class="post_username">@MaisonValentino</p>
-                    <p class="post_content">Maison Valentino was founded in 1960 by Valentino Garavani & Giancarlo Giammetti.
+                    <img class="post-avatar" src="images/valentino.png"/>
+                    <p class="post-username">@MaisonValentino</p>
+                    <p class="post-content">Maison Valentino was founded in 1960 by Valentino Garavani & Giancarlo Giammetti.
                         The Creative Direction as of July 7th 2016 was appointed to Pierpaolo Piccioli.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 <article class="post">
-                <img class="post_avatar" src="images/victoria.png">
-                <p class="post_username">@VictoriasSecret</p>
-                <p class="post_content">Treat yourself!
+                <img class="post-avatar" src="images/victoria.png"/>
+                <p class="post-username">@VictoriasSecret</p>
+                <p class="post-content">Treat yourself!
                     Starting today, Feb. 29, through March 9, redeem your $20 reward card on a $50 purchase.</p>
-                <img class="post_like-image" src="images/like.png">
-                <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
             </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/fendi.png">
-                    <p class="post_username">@Fendi</p>
-                    <p class="post_content">A new perspective. The upside-down headbands, worn beneath the decoratively woven buns,
+                    <img class="post-avatar" src="images/fendi.png"/>
+                    <p class="post-username">@Fendi</p>
+                    <p class="post-content">A new perspective. The upside-down headbands, worn beneath the decoratively woven buns,
                         were the beauty highlight of the Fashion Show.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/mcqueen.png">
-                    <p class="post_username">@McQueen</p>
-                    <p class="post_content">A tailored jacket with an extended tail drape and satin lapels,
+                    <img class="post-avatar" src="images/mcqueen.png"/>
+                    <p class="post-username">@McQueen</p>
+                    <p class="post-content">A tailored jacket with an extended tail drape and satin lapels,
                         worn with black wool silk trousers and a white cotton poplin shirt with an extended tail drape and triangular lace trim.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/dior.png">
-                    <p class="post_username">@Dior</p>
-                    <p class="post_content">A pop of color. Explore the Dior Spring Summer 2020 campaign,
+                    <img class="post-avatar" src="images/dior.png"/>
+                    <p class="post-username">@Dior</p>
+                    <p class="post-content">A pop of color. Explore the Dior Spring Summer 2020 campaign,
                         shot by Steven Meisel featuring Adriana Lima and Joan Smalls and experience the latest theme of the Dior Spring Summer 2020 collection:
                         The Pastel Army.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/gucci.png">
-                    <p class="post_username">@Gucci</p>
-                    <p class="post_content">Inside a circular transparent structure in the middle of the space,
+                    <img class="post-avatar" src="images/gucci.png"/>
+                    <p class="post-username">@Gucci</p>
+                    <p class="post-content">Inside a circular transparent structure in the middle of the space,
                         Gucci’s design team, dressed in grey uniforms with labels that read (Dream Maker), dressed 60 models.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/prada.png">
-                    <p class="post_username">@Prada</p>
-                    <p class="post_content">The everyday is corrupted by glamour, forms and functions challenged, shifted from practical to aesthetic.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <img class="post-avatar" src="images/prada.png"/>
+                    <p class="post-username">@Prada</p>
+                    <p class="post-content">The everyday is corrupted by glamour, forms and functions challenged, shifted from practical to aesthetic.</p>
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/lv.png">
-                    <p class="post_username">@LouisVuitton</p>
-                    <p class="post_content">Casually chic. One of the new Twist bags adds a colorful shoulder strap for a laid-back touch. </p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <img class="post-avatar" src="images/lv.png"/>
+                    <p class="post-username">@LouisVuitton</p>
+                    <p class="post-content">Casually chic. One of the new Twist bags adds a colorful shoulder strap for a laid-back touch. </p>
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
                 </article>
                 </article>
                 <article class="post">
-                    <img class="post_avatar" src="images/chanel.png">
-                    <p class="post_username">@CHANEL</p>
-                    <p class="post_content">The Fall-Winter 2020/21 Ready-to-Wear collection will be unveiled tomorrow.
+                    <img class="post-avatar" src="images/chanel.png"/>
+                    <p class="post-username">@CHANEL</p>
+                    <p class="post-content">The Fall-Winter 2020/21 Ready-to-Wear collection will be unveiled tomorrow.
                         Live from Paris on Twitter, March 3rd at 10.30 am Paris time.
-
                         Film directed by Inez & Vinoodh.
                         Starring Margaret Qualley.</p>
-                    <img class="post_like-image" src="images/like.png">
-                    <!-- Это пост -->
+                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
+
                 </article>
             </div>
         </div>
-        <input class="show-more-posts" type="button" value="Show more">
+        <input class="show-more-posts" type="button" value="Show more"/>
     </main>
     <footer class="footer">
         <div>
@@ -145,3 +137,4 @@
         </div>
     </footer>
 </body>
+</html>
