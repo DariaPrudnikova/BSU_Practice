@@ -1,22 +1,29 @@
 // eslint-disable-next-line no-unused-vars
 class PostList {
   constructor(posts) {
-    this._posts = posts;
+    this._posts = [];
+    this.addAll(posts);
   }
 
   static validate(post) {
-    console.log(`validating ${post}`);
+    if (!post) return false;
+    if (!post.id || typeof post.id !== 'number') return false;
+    if (!post.author || typeof post.author !== 'string') return false;
+    if (!post.content || typeof post.content !== 'string') return false;
+    if (!post.createdAt || typeof post.createdAt !== 'object') return false;
     return true;
   }
 
   _filter(posts, filterConfig) {
-    console.log(`filtering by ${filterConfig}`);
-    return posts;
+    if (!filterConfig) return posts;
+    const { createdAt, author } = filterConfig;
+    return posts.filter(post => post.author === author && post.createdAt === createdAt);
   }
 
   getPage(skip, top, filterConfig = {}) {
     const page = this._posts.slice(skip, skip + top);
-    return this._filter(page, filterConfig);
+    const sorted = page.sort((a, b) => a.createdAt < b.createdAt);
+    return this._filter(sorted, filterConfig);
   }
 
   get(id) {
@@ -29,12 +36,25 @@ class PostList {
     return true;
   }
 
+  edit(id, data) {
+    const index = this._posts.findIndex(post => post.id === id);
+    const postToEdit = this._posts[index];
+    const editedPost = { ...postToEdit, ...data };
+    if (!PostList.validate(editedPost)) return false;
+    this._posts[index] = editedPost;
+    return editedPost;
+  }
+
   addAll(posts) {
     return posts.reduce((invalidPosts, post) => {
       const result = this.add(post);
       if (!result) invalidPosts.push(post);
       return invalidPosts;
-    });
+    }, []);
+  }
+
+  clear() {
+    this._posts = [];
   }
 
   remove(id) {
