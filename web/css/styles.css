@@ -16,6 +16,10 @@ html, body {
     background: #ffffff;
 
 }
+button {
+    border: none;
+    background-color: inherit;
+}
 .header-logo a {
     vertical-align: top;
 }
@@ -50,7 +54,7 @@ html, body {
     border: white;
 }
 .new-post {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     margin: 70px auto 20px auto;
     width: 80%;
@@ -61,25 +65,32 @@ html, body {
 .new-post-avatar {
     width: 80px;
     height: 80px;
+    float: left;
 }
 .new-post-description {
-    border: none;
     padding: 0 8px;
-    width: calc(100% - 300px);
+    width: 90%;
+    height: 80px;
+    border: none;
     font-size: large;
+
+}
+.buttons{
+    margin-right: 10 px;
 }
 .new-post-add-image {
-    vertical-align: top;
-    width: 0px;
-    align-self: flex-end;
     background: none;
-    boarder: none;
+    border: none;
     border-radius: 20px;
+    align-self: flex-start;
+}
+.post-add-image{
+    width: 32px;
+    height: 32px;
 }
 .new-post-create-post-button {
-    width: 35%;
-    height: 10%;
-    align-self: flex-end;
+    width: 10%;
+    height: 30px;
     border-radius: 20px;
     background: #3dd3f3;
     color: aliceblue;
@@ -109,7 +120,8 @@ html, body {
 }
 .post {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-direction: column;
     margin: 10px auto;
     width: 80%;
     border: 2px solid rgb(184, 184, 184);
@@ -117,34 +129,59 @@ html, body {
     padding: 10px;
 
 }
-.post_avatar{
+.post-avatar{
     width: 80px;
     height: 80px;
 }
 .post-username{
     color: rgb(165, 165, 165);
-    display: inline-block;
     font-size: medium;
     font-family: sans-serif;
     font-style: oblique;
-    vertical-align: middle;
-    padding-right: 10px;
+    /* vertical-align: middle; */
 }
+
+.post-info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .post-content{
     border: none;
-    padding: 0 8px;
-    width: calc(100% - 300px);
+    /* width: calc(100% - 300px); */
 }
+
+.post-main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    /* width: calc(100% - 300px); */
+
+}
+
+.post-text {
+    margin-left: 16px;
+}
+
+
 .post-like-image {
     width: 32px;
+    height: 32px;
     align-self: flex-end;
 }
 .post-edit-image {
-    width: 30px;
+    width: 32px;
+    height: 32px;
     align-self: flex-end;
 }
-.post_delete-image{
-    width: 25px;
+.post-delete-image{
+    width: 32px;
+    height: 32px;
     align-self: flex-end;
 }
 .date-time{
@@ -177,6 +214,6 @@ html, body {
     font-size: small;
 }
 @media only screen and (max-width: 1000px) {
-    
+
 }
 

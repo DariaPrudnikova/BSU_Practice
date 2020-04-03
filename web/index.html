@@ -2,139 +2,256 @@
 <html lang="en">
 <head>
     <title>Gossip</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-logo">
-            <a href="#top"><img src="./images/logo.png" alt="Logo"></a>
-        </div>
-        <div class="header-search">
-            <img class="header-search-img" src="images/search.png"/>
-            <input class="header-search-input" type="search" placeholder="Search..."/>
-        </div>
-        <div class="header-user">
-            <p class="header-username">@Daria</p>
-            <button class="log-out"><img src="./images/log_out.png"  alt="Log out"></button>
-        </div>
-    </header>
-    <main class="main">
-        <div class="new-post">
-            <form>
-                <!--<button class="ico-btn like-btn"><img src="path/to/like.jpg" alt="Like"/></button>-->
+<header class="header">
+    <div class="header-logo">
+        <a href="#top"><img src="./images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="header-search">
+        <img class="header-search-img" src="images/search.png"/>
+        <input class="header-search-input" type="search" placeholder="Search..."/>
+    </div>
+    <div class="header-user">
+        <p class="header-username">@Daria</p>
+        <button class="log-out"><img src="./images/log_out.png"  alt="Log out"></button>
+    </div>
+</header>
+<main class="main">
+    <div class="new-post">
+        <form>
+            <div>
                 <img class="new-post-avatar" src="images/user_avatar.png"/>
-                <input class="new-post-description" type="text" placeholder="What's happening?" required/>
-                <button class="new-post-add-image"><img src="images/add_image.png" alt="Add"/></button>
-                <input class="new-post-create-post-button" type="button" value="New post"/>
-            </form>
-        </div>
-        <div class="main-filter">
-            <p class="filter" type="text">Filter by...</p>
-            <input class="filter-search-name" type="text" placeholder="@name"/>
-            <input class="header-search-date" type="date" placeholder="dd.mm.yy"/>
-            <input class="header-search-hashtag" type="text" placeholder="#hashtag"/>
-        </div>
-        <div class="main-publications-wrapper">
-            <div class="main-publications">
-                <article class="post">
-                    <img class="post-avatar" src="images/user_avatar.png"/>
-                    <p class="post-username">@Daria</p>
-                    <p class="post-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    #dasha</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                    <button class="post-edit-image"><img src="images/edit.png" alt="Edit"/></button>
-                    <button class="post-delete-image"><img src="images/delete.png" alt="Delete"/></button>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/valentino.png"/>
-                    <p class="post-username">@MaisonValentino</p>
-                    <p class="post-content">Maison Valentino was founded in 1960 by Valentino Garavani & Giancarlo Giammetti.
-                        The Creative Direction as of July 7th 2016 was appointed to Pierpaolo Piccioli.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                <article class="post">
-                <img class="post-avatar" src="images/victoria.png"/>
-                <p class="post-username">@VictoriasSecret</p>
-                <p class="post-content">Treat yourself!
-                    Starting today, Feb. 29, through March 9, redeem your $20 reward card on a $50 purchase.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-            </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/fendi.png"/>
-                    <p class="post-username">@Fendi</p>
-                    <p class="post-content">A new perspective. The upside-down headbands, worn beneath the decoratively woven buns,
-                        were the beauty highlight of the Fashion Show.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/mcqueen.png"/>
-                    <p class="post-username">@McQueen</p>
-                    <p class="post-content">A tailored jacket with an extended tail drape and satin lapels,
-                        worn with black wool silk trousers and a white cotton poplin shirt with an extended tail drape and triangular lace trim.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/dior.png"/>
-                    <p class="post-username">@Dior</p>
-                    <p class="post-content">A pop of color. Explore the Dior Spring Summer 2020 campaign,
-                        shot by Steven Meisel featuring Adriana Lima and Joan Smalls and experience the latest theme of the Dior Spring Summer 2020 collection:
-                        The Pastel Army.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/gucci.png"/>
-                    <p class="post-username">@Gucci</p>
-                    <p class="post-content">Inside a circular transparent structure in the middle of the space,
-                        Gucci’s design team, dressed in grey uniforms with labels that read (Dream Maker), dressed 60 models.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/prada.png"/>
-                    <p class="post-username">@Prada</p>
-                    <p class="post-content">The everyday is corrupted by glamour, forms and functions challenged, shifted from practical to aesthetic.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/lv.png"/>
-                    <p class="post-username">@LouisVuitton</p>
-                    <p class="post-content">Casually chic. One of the new Twist bags adds a colorful shoulder strap for a laid-back touch. </p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-                </article>
-                </article>
-                <article class="post">
-                    <img class="post-avatar" src="images/chanel.png"/>
-                    <p class="post-username">@CHANEL</p>
-                    <p class="post-content">The Fall-Winter 2020/21 Ready-to-Wear collection will be unveiled tomorrow.
-                        Live from Paris on Twitter, March 3rd at 10.30 am Paris time.
-                        Film directed by Inez & Vinoodh.
-                        Starring Margaret Qualley.</p>
-                    <button class="post-like-image"><img src="images/like.png" alt="Like"/></button>
-
-                </article>
             </div>
+            <input class="new-post-description" type="text" placeholder="What's happening?" required/>
+            <div class = "buttons">
+            <button class="new-post-add-image"><img class="post-add-image" src="images/add_image.png" alt="Add"/></button>
+            <input class="new-post-create-post-button" type="button" value="New post"/>
+            </div>
+        </form>
+    </div>
+    <div class="main-filter">
+        <p class="filter" type="text">Filter by...</p>
+        <input class="filter-search-name" type="text" placeholder="@name"/>
+        <input class="header-search-date" type="date" placeholder="dd.mm.yy"/>
+        <input class="header-search-hashtag" type="text" placeholder="#hashtag"/>
+    </div>
+    <div class="main-publications-wrapper">
+        <div class="main-publications">
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/user_avatar.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@Daria</span>
+                            <span class="post-date post-username">13:03 13.03.2020</span>
+                        </div>
+                        <p class="post-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            #dasha</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                    <button><img class="post-edit-image" src="images/edit.png" alt="Edit"/></button>
+                    <button><img class="post-delete-image" src="images/delete.png" alt="Delete"/></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/valentino.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@MaisonValentino</span>
+                            <span class="post-date post-username">17:03 10.02.2020</span>
+                        </div>
+                        <p class="post-content">Maison Valentino was founded in 1960 by Valentino Garavani & Giancarlo Giammetti.
+                            The Creative Direction as of July 7th 2016 was appointed to Pierpaolo Piccioli.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/victoria.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@VictoriasSecret</span>
+                            <span class="post-date post-username">19:03 09.02.2020</span>
+                        </div>
+                        <p class="post-content">Treat yourself!
+                            Starting today, Feb. 29, through March 9, redeem your $20 reward card on a $50 purchase.
+                            The Creative Direction as of July 7th 2016 was appointed to Pierpaolo Piccioli.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/fendi.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@Fendi</span>
+                            <span class="post-date post-username">20:03 08.02.2020</span>
+                        </div>
+                        <p class="post-content">A new perspective. The upside-down headbands, worn beneath the decoratively woven buns,
+                            were the beauty highlight of the Fashion Show.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/mcqueen.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@McQueen</span>
+                            <span class="post-date post-username">21:03 07.02.2020</span>
+                        </div>
+                        <p class="post-content">A tailored jacket with an extended tail drape and satin lapels,
+                            worn with black wool silk trousers and a white cotton poplin shirt with an extended tail drape and triangular lace trim.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/dior.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@Dior</span>
+                            <span class="post-date post-username">22:20 08.02.2020</span>
+                        </div>
+                        <p class="post-content">A pop of color. Explore the Dior Spring Summer 2020 campaign,
+                            shot by Steven Meisel featuring Adriana Lima and Joan Smalls and experience the latest theme of the Dior Spring Summer 2020 collection:
+                            The Pastel Army.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/gucci.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@Gucci</span>
+                            <span class="post-date post-username">23:23 06.02.2020</span>
+                        </div>
+                        <p class="post-content">Inside a circular transparent structure in the middle of the space,
+                            Gucci’s design team, dressed in grey uniforms with labels that read (Dream Maker), dressed 60 models.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/prada.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@Prada</span>
+                            <span class="post-date post-username">23:50 05.02.2020</span>
+                        </div>
+                        <p class="post-content">The everyday is corrupted by glamour, forms and functions challenged, shifted from practical to aesthetic.
+                            March 3rd at 10.30 am Paris time.
+                            Film directed by Inez & Vinoodh.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/lv.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@LouisVuitton</span>
+                            <span class="post-date post-username">20:03 04.02.2020</span>
+                        </div>
+                        <p class="post-content">Casually chic. One of the new Twist bags adds a colorful shoulder strap for a laid-back touch.
+                            March 3rd at 10.30 am Paris time.
+                            Film directed by Inez & Vinoodh.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
+            </article>
+            <article class="post">
+                <div class="post-main-content">
+                    <div>
+                        <img class="post-avatar" src="images/chanel.png"/>
+                    </div>
+                    <div class="post-text">
+                        <div class="post-info">
+                            <span class="post-username">@CHANEL</span>
+                            <span class="post-date post-username">20:03 08.02.2019</span>
+                        </div>
+                        <p class="post-content">The Fall-Winter 2020/21 Ready-to-Wear collection will be unveiled tomorrow.
+                            Live from Paris on Twitter, March 3rd at 10.30 am Paris time.
+                            Film directed by Inez & Vinoodh.
+                            Starring Margaret Qualley.</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button><img class="post-like-image" src="images/like.png" alt="Like"/></button>
+                </div>
+            </article>
         </div>
-        <input class="show-more-posts" type="button" value="Show more"/>
-    </main>
-    <footer class="footer">
-        <div>
-            <p>Daria Prudnikova</p>
-        </div>
-        <div>
-            <p>2 course 7 group</p>
-        </div>
-        <div>
-            <p>prudnikova.dashenka@gmail.com</p>
-        </div>
-        <div>
-            <p>Gossip, Inc., 2020.</p>
-        </div>
-    </footer>
+    </div>
+    <input class="show-more-posts" type="button" value="Show more"/>
+</main>
+<footer class="footer">
+    <div>
+        <p>Daria Prudnikova</p>
+    </div>
+    <div>
+        <p>2 course 7 group</p>
+    </div>
+    <div>
+        <p>prudnikova.dashenka@gmail.com</p>
+    </div>
+    <div>
+        <p>Gossip, Inc., 2020.</p>
+    </div>
+</footer>
 </body>
 </html>
