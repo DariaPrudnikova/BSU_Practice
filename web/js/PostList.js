@@ -11,6 +11,11 @@ class PostList {
     if (!post.author || typeof post.author !== 'string') return false;
     if (!post.content || typeof post.content !== 'string') return false;
     if (!post.createdAt || typeof post.createdAt !== 'object') return false;
+
+    if (post.imageUrl && typeof post.imageUrl !== 'string') return false;
+    if (post.likes && typeof post.likes !== 'object') return false;
+    if (post.hashTags && typeof post.hashTags !== 'object') return false;
+
     return true;
   }
 
@@ -20,7 +25,7 @@ class PostList {
     return posts.filter(post => post.author === author && post.createdAt === createdAt);
   }
 
-  getPage(skip, top, filterConfig = {}) {
+  getPage(skip = 0, top = 10, filterConfig = null) {
     const page = this._posts.slice(skip, skip + top);
     const sorted = page.sort((a, b) => a.createdAt < b.createdAt);
     return this._filter(sorted, filterConfig);
