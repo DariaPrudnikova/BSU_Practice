@@ -1,4 +1,4 @@
-package com.company;
+package com.bsu;
 
 import java.io.IOException;
 
