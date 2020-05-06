@@ -6,15 +6,15 @@
     
     <servlet>
         <servlet-name>status</servlet-name>
-        <servlet-class>com.company.StatusServlet</servlet-class>
+        <servlet-class>com.bsu.StatusServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>name</servlet-name>
-        <servlet-class>com.company.NameServlet</servlet-class>
+        <servlet-class>com.bsu.NameServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>check</servlet-name>
-        <servlet-class>com.company.CheckServlet</servlet-class>
+        <servlet-class>com.bsu.CheckServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>page</servlet-name>
@@ -22,18 +22,26 @@
     </servlet>
     <servlet>
         <servlet-name>forward</servlet-name>
-        <servlet-class>com.company.ForwardServlet</servlet-class>
+        <servlet-class>com.bsu.ForwardServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>redirect</servlet-name>
-        <servlet-class>com.company.RedirectServlet</servlet-class>
+        <servlet-class>com.bsu.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>tweet</servlet-name>
+        <servlet-class>com.bsu.TweetServlet</servlet-class>
     </servlet>
     <filter>
         <filter-name>filter</filter-name>
-        <filter-class>com.company.TimeMeasurementFilter</filter-class>
+        <filter-class>com.bsu.TimeMeasurementFilter</filter-class>
     </filter>
 
     
+    <servlet-mapping>
+        <servlet-name>tweet</servlet-name>
+        <url-pattern>/tweets</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>status</servlet-name>
         <url-pattern>/status</url-pattern>
