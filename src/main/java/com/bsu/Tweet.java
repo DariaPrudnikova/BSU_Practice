@@ -1,4 +1,5 @@
 package com.bsu;
+import java.util.Date;
 
 public class Tweet {
     private int id;
@@ -17,7 +18,7 @@ public class Tweet {
         this.author = author;
     }
 
-    public int getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
