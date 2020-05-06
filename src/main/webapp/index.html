@@ -2,12 +2,8 @@
 <html lang="en">
 <head>
     <title>Gossip</title>
-<<<<<<< Updated upstream
-    <link rel="stylesheet" href="css/styles.css">
     <script src="../src/main/webapp/js/js/PostsList.js"></script>
-=======
     <link rel="stylesheet" href="css/styles.css">
->>>>>>> Stashed changes
 </head>
 <body>
 <header class="header">
@@ -25,6 +21,13 @@
 </header>
 <main class="main">
     <div class="new-post">
+        <form action="upload" method="post" enctype="multipart/form-data">
+          <span> Attach image: </span>
+          <input type="file" name="fileName">
+          <div>
+            <button> POST </button>
+          </div>
+          </form>
         <form>
             <div>
                 <img class="new-post-avatar" src="images/user_avatar.png"/>

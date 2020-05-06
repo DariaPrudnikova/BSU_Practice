@@ -32,6 +32,10 @@
         <servlet-name>tweet</servlet-name>
         <servlet-class>com.bsu.TweetServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>upload</servlet-name>
+        <servlet-class>com.bsu.FileUploadServlet</servlet-class>
+    </servlet>
     <filter>
         <filter-name>filter</filter-name>
         <filter-class>com.bsu.TimeMeasurementFilter</filter-class>
@@ -41,6 +45,10 @@
     <servlet-mapping>
         <servlet-name>tweet</servlet-name>
         <url-pattern>/tweets</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>status</servlet-name>
