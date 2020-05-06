@@ -44,7 +44,7 @@
     
     <servlet-mapping>
         <servlet-name>tweet</servlet-name>
-        <url-pattern>/tweets</url-pattern>
+        <url-pattern>/tweets/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>upload</servlet-name>
