@@ -1,14 +1,15 @@
 package com.bsu;
 
+import java.util.List;
 import java.util.ArrayList;
 
 public class TweetCollection {
     
-    private ArrayList<Tweet> tweets;
+    private List<Tweet> tweets;
     private int nextId;
 
     public TweetCollection() {
-        tweets = new ArrayList();
+        tweets = new ArrayList<>();
         nextId = 1;
     }
 
@@ -27,7 +28,7 @@ public class TweetCollection {
         return null;
     }
 
-    public ArrayList<Tweet> getTweets() {
+    public List<Tweet> getTweets() {
         return this.tweets;
     }
 

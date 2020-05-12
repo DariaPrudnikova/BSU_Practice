@@ -1,5 +1,5 @@
 package com.bsu;
-import java.util.ArrayList;
+import java.util.List;
 import java.io.IOException;
 import java.lang.NumberFormatException;
 
@@ -28,7 +28,7 @@ public class TweetServlet extends HttpServlet {
     }
   }
 
-  private void returnMultiple(HttpServletResponse response, ArrayList<Tweet> tweets) {
+  private void returnMultiple(HttpServletResponse response, List<Tweet> tweets) {
     try {
       JSONArray json = new JSONArray();
       for (Tweet tweet : tweets) {
